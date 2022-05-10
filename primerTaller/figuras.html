@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header_container">
+        <div>
+            <h1>Figuras Geométricas</h1>
+            <p>Este es el primer taller del curso práctico de JavaScript</p>
+        </div>
+    </header>
+    <main class="main_container">
+        <section class="main_content">
+            <article class="card_container card_container--square">
+                <section class="card_info">
+                    <h2>Calcula el área y el perímetro de un cuadrado</h2>
+                    <form action="">
+                    <label for="inputCuadrado">Ingresa la medida de un lado de tu cuadrado</label>
+                    <img src="./assets/images/cuadrado.png" alt="Cuadrado">
+                    <input id="inputCuadrado" type="number">
+                    <div class="card_buttons">
+                        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                        <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+                    </div> 
+                    </form>
+                </section>  
+            </article>
+
+            <article class="card_container">
+                <section class="card_info">
+                    <h2>Calcula el área y el perímetro de un triangulo</h2>
+                    <form action="">
+                    <label for="inputTriangulo">Ingresa la medida de los lados, la base y la altura de tu triangulo</label>
+                    <img src="./assets/images/triangle.png" alt="Triangulo">
+                    <input id="inputTrianguloLado1" type="number" placeholder="Lado1">
+                    <input id="inputTrianguloLado2" type="number" placeholder="Lado2">
+                    <input id="inputTrianguloBase" type="number" placeholder="Base">
+                    <input id="inputTrianguloAltura" type="number"
+                    placeholder="Altura">
+                    <div class="card_buttons">
+                        <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+                        <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+                    </div> 
+                    </form>
+                </section>  
+            </article>
+            
+            <article class="card_container card_container--circle">
+                <section class="card_info">
+                    <h2>Calcula el diametro, el área y el perímetro de un circulo</h2>
+                    <form action="">
+                    <label for="inputCirculo">Ingresa la medida del radio de tu circulo</label>
+                    <img src="./assets/images/circle.png" alt="Circulo">
+                    <input id="inputCirculo" type="number" placeholder="Radio">
+                    <div class="card_buttons">
+                        <button type="button" onclick="calcularDiametroCirculo()">Calcular el diametro</button>
+                        <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
+                        <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+                    </div> 
+                    </form>
+                </section>  
+            </article>
+        </section>
+    </main>
+    <footer class="footer_container">
+        <section class="footer_content">
+            <p>Hecho con 💚 por JuanDavidG2203</p>
+        </section>
+    </footer>
+    <script src="./figuras.js"></script>
+</body>
+</html>
