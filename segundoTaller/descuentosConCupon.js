@@ -36,6 +36,11 @@ function priceWithDiscount(){
 
     const resultP = document.getElementById("priceP");
 
-    resultP.innerText = "El precio con descuento es de " + "$" + precioConDescuento
+    
+    if (verificarCupon() !== 0){
+        resultP.innerText = "El precio con descuento es de " + "$" + precioConDescuento + " (tu cupón te dió un " + verificarCupon() + "% extra de descuento)"
+    } else {
+        resultP.innerText = "El precio con descuento es de " + "$" + precioConDescuento
+    }
 
 }

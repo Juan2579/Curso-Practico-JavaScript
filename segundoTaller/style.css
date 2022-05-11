@@ -127,7 +127,9 @@ html{
     width: 100%;
     min-width: 230px;
     max-width: 300px;
-    height: 45px;
+    height: 20%;
+    min-height: 42px;
+    max-height: 70px;
     border: 2px solid #80afe7;
     padding: 8px;
     border-radius: 20px;
