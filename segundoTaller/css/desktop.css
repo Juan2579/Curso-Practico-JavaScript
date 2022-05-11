@@ -1,0 +1,22 @@
+.header_container h1{
+    font-size: 3rem
+}
+.header_container p{
+    font-size: 2.6rem;
+}
+.card_info h2{
+    font-size: 2.1rem
+}
+.card_info label{
+    font-size: 1.8rem
+}
+.card_info button{
+    padding: 13px;
+    font-size: 1.7rem
+}
+.card_info p{
+    font-size: 1.7rem
+}
+.footer_container .footer_content p{
+    font-size: 2.2rem
+}

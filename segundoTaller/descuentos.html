@@ -4,11 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name=”robots”  content=”index,follow”>
+    <link rel="icon" type="image/png" sizes="32x32" href="" alt="Favicon icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1000px)">
 </head>
 <body>
-    
+    <header class="header_container">
+        <section class="header_content">
+            <h1>Porcentajes y descuentos</h1>
+            <p>Este es el segundo taller del Curso Práctico de JavaScript</p>
+        </section>
+        
+    </header>
+    <main class="main_container">
+        <section class="main_content">
+            <article class="card_container">
+                <div class="card_info">
+                    <h2>Calcula el precio a pagar de tus productos con descuento</h2>
 
+                    <img src="./assets/images/cart.svg" alt="">
+                    <form action="">
+                        <label for="inputPrice">Escribe el precio de tu producto</label>
+                        <input id="inputPrice" type="number" placeholder="$">
+    
+                        <label for="inputDiscount">Escribe el porcentaje de tu descuento</label>
+                        <input id="inputDiscount" type="number" placeholder="%">
+    
+                        <button type="button" onclick="priceWithDiscount()">Calcular el precio con descuento</button>
+    
+                        
+                        <p id="priceP">Aqui verás tu precio final 🤑</p>
+                              
+                    </form>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer class="footer_container">
+        <section class="footer_content">
+            <p>Hecho con 💚 por JuanDavidG2203</p>
+        </section>
+    </footer>
     <script src="./descuentos.js"></script>
 </body>
 </html>
