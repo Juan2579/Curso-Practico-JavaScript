@@ -7,11 +7,11 @@ function calcularPrecioConDescuento(precio, descuento) {
 
 function priceWithDiscount(){
     const inputPrice = document.getElementById("inputPrice");
-    const priceValue = (inputPrice.value);
+    const priceValue = inputPrice.value;
 
 
     const inputDiscount = document.getElementById("inputDiscount");
-    const discountValue = (inputDiscount.value);
+    const discountValue = inputDiscount.value;
 
     const precioConDescuento = calcularPrecioConDescuento(priceValue, discountValue)
 
