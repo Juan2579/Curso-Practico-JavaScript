@@ -130,7 +130,7 @@ html{
 .footer_container{
     width: 100%;
     height: auto;
-    background: linear-gradient(to right, #ffefba, #ffffff);
+    background-color: linear-gradient(to right, #ffefba, #ffffff);
 }
 .footer_content{
     display: flex;
