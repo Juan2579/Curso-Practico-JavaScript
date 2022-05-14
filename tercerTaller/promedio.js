@@ -29,7 +29,7 @@ function resultadoMediaAritmetica(){
         lista.push(Number(listaInputs[i].value));
     }
 
-    cardPrintResult.innerText = "El promedio es de " + calcularMediaAritmetica(lista); 
+    cardPrintResult.innerText = "El promedio es de " + calcularMediaAritmetica(lista).toFixed(2); 
 
 }
 
