@@ -120,6 +120,7 @@ html{
     color: #beb1e9;
     background-color: #080826;
     box-shadow: 0 0 20px rgba(0,0,0,0.100);
+    cursor: pointer;
 }
 
 
@@ -170,6 +171,7 @@ html{
     color: #beb1e9;
     background-color: #080826;
     box-shadow: 0 0 20px rgba(0,0,0,0.100);
+    cursor: pointer;
 }
 .card_results p{
     width: 100%;
