@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name=”robots”  content=”index,follow”>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/" alt="Favicon icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <title>MathJS</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="header_container">
+        <section class="header_content">
+            <img class="header_logo" src="./assets/icons/jsIcon.svg" alt="JavaScript Icon">
+            <h1>Welcome to MathJS!</h1>
+            <button onclick="appearNavigation()" id="button_burguer" type="button" class="button_burger"><img class="header_burger" src="./assets/icons/burger.svg" alt="Burger Icon"></button>
+            <button onclick="dissapearNavigation()" id="button_x" type="button" class="button_x"><img class="header_xButton" src="./assets/icons/xButton.svg" alt="X Icon"></button>
+            <nav class="header_nav">
+                <ul class="nav_content">
+                    <li><a href="">Geometry</a></li>
+                    <li><a href="">Discounts</a></li>
+                    <li><a href="">Statistic</a></li>
+                    <li><a href="">Salary</a></li>
+                </ul>
+            </nav>
+        </section> 
+    </header>
+
+    <main class="main_container">
+        <section class="main_content">
+            <section class="main_presentation">
+                <div class="header_mobile-navigation">
+                    <ul class="nav_mobile-content">
+                        <li><a href="./primerTaller/figuras.html">Geometry</a></li>
+                        <li><a href="./segundoTaller/descuentosConCupon.html">Discounts</a></li>
+                        <li><a href="">Statistic</a></li>
+                        <li><a href="./cuartoTaller/salarios.html">Salary</a></li>
+                    </ul>
+                </div>
+                <section class="main_title">
+                    <div class="title_info">
+                        <h2>MathJS is the best app for you to make your mathematical operations in a comfortable and efficent way</h2>
+                        <img src="./assets/images/mathTittle.svg" alt="Math Ilustration">
+                    </div>  
+                </section>
+            </section>
+
+            <section class="main_links">
+                <section class="links_content">
+
+                    <h2>Let's see what you can do with MathJS!</h2>
+
+                    <article class="card_links--geometry">
+
+                        <div class="card_content--geometry">
+                            <h3 class="geometry_title">Calculate the measurements of your geometric figures</h3>
+                            <img src="./assets/images/geometry.png" alt="Geometric Figures Image">
+                            <a href="./primerTaller/figuras.html"><button class="geometry_button">Let's see!</button></a>
+                        </div>
+
+                    </article>
+
+                    <article class="card_links--discount">
+
+                        <div class="card_content--discount">
+                            <h3 class="discount_title">Calculate the price to pay for your discounted products</h3>
+                            <img src="./assets/images/discounts.png" alt="Discount Image">
+                            <a href="./segundoTaller/descuentosConCupon.html"><button class="discount_button">Let's see!</button></a>
+                        </div>
+
+                    </article>
+
+                    <article class="card_links--stats">
+
+                        <div class="card_content--stats">
+                            <h3 class="stats_title">Calculate the median, mode and average of your numbers</h3>
+                            <img src="./assets/images/average.png" alt="Average Image">
+                            
+                            <div class="stats_buttons">
+                                <a href="./tercerTaller/mediana/mediana.html"><button class="stats_button">Median</button></a>
+                                <a href="./tercerTaller/moda/moda.html"><button class="stats_button">Mode</button></a>
+                                <a href="./tercerTaller/promedio/promedio.html"><button class="stats_button">Average</button></a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="card_links--salary">
+
+                        <div class="card_content--salary">
+                            <h3 class="salary_title">Get a Salary Analysis</h3>
+                            <img src="./assets/images/salary.png" alt="Salary Image">
+                            <a href="./cuartoTaller/salarios.html"><button class="salary_button">Let's see!</button></a>     
+                        </div>
+
+                    </article>
+                </section>
+                
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer_container">
+        <section class="footer_content">
+            <p>Developed by Juan Gualdron</p>
+        </section>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
