@@ -1,4 +1,27 @@
+let inputNumbers = document.getElementById("inputNumbers");
+
+let cardInfo = document.querySelector('.card_info')
+
+let cardResults = document.querySelector('.card_results')
+let newInputs = document.querySelector('.card_newInputs')
+let cardPrintResult = document.querySelector('.card_printResult')
+
+
+
 //Helper functions
+
+function mostrarDatos(){
+    if (inputNumbers.value > 0){
+        cardInfo.style.display = 'none';
+        cardResults.style.display = 'flex';
+
+        for(let i = 0; i < inputNumbers.value; i++){
+            newInputs.innerHTML += `<input class="" id="" type="number" placeholder="$" >`;
+        }
+    
+    }   
+}
+
 
 function esPar(numerito){
     return (numerito % 2 === 0);
@@ -38,25 +61,39 @@ function calcularMediana(lista){
 }
 
 //Variables de la mediana general
+function calcularMedianaSalarios(lista) {
+    const salariosColombia = lista.map(
+        function(salario){
+            return salario
+    })
+    const salariosColombiaOrdenados = lista.sort(
+        function(salaryA, salaryB){
+            return salaryA - salaryB;
+    })
+    const medianaGeneralColombia = Number(calcularMediana(lista));
 
-const salariosColombia = colombia.map(
-    function(persona){
-        return persona.salary
-})
+    return medianaGeneralColombia
+}
 
-const salariosColombiaOrdenados = salariosColombia.sort(
-    function(salaryA, salaryB){
-        return salaryA - salaryB;
-})
+// //Mediana del top 10%
+// function calculartop10Colombia(listaOrdenada) {
+//     const spliceStart = (listaOrdenada.length * 90) / 100;
+//     const spliceCount = listaOrdenada.length - spliceStart
 
-const medianaGeneralColombia = Number(calcularMediana(salariosColombiaOrdenados));
+//     const salariosTop10Colombia = listaOrdenada.splice(spliceStart, spliceCount)
 
+//     const medianaTop10Colombia = Number(calcularMediana(salariosTop10Colombia))
 
-//Mediana del top 10%
+//     return medianaTop10Colombia;
+// }
 
-const spliceStart = (salariosColombiaOrdenados.length * 90) / 100;
-const spliceCount = salariosColombiaOrdenados.length - spliceStart
+function resultadoSalarios() {
+    const listaInputs = document.querySelectorAll('.card_results .card_newInputs input')
 
-const salariosTop10Colombia = salariosColombiaOrdenados.splice(spliceStart, spliceCount)
+    let lista = [];
 
-const medianaTop10Colombia = Number(calcularMediana(salariosTop10Colombia))
+    for (let i = 0; i < listaInputs.length; i++) {
+        lista.push(Number(listaInputs[i].value));
+    }
+    cardPrintResult.innerText = "La mediana de los salarios es de $" + calcularMedianaSalarios(lista) + " y el promedio de los salarios es de $" + calcularMediaAritmetica(lista)
+}
