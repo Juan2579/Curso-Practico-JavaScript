@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name=”robots”  content=”index,follow”>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/promedio.png" alt="Favicon icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <title>Promedio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 950px)">
+</head>
+<body>
+    <header class="header_container">
+        <section class="header_content">
+            <div>
+                <h1>Average, Median and Mode</h1>
+                <p>Let's calculate the average, median and mode of your numbers</p>
+            </div>
+            <button onclick="appearNavigation()" id="button_burguer" type="button" class="button_burger"><img class="header_burger" src="../cuartoTaller/assets/icons/burger.svg" alt="Burger Icon"></button>
+            <button onclick="dissapearNavigation()" id="button_x" type="button" class="button_x"><img class="header_xButton" src="../cuartoTaller/assets/icons/xButton.svg" alt="X Icon"></button>
+            <nav class="header_nav">
+                <ul class="nav_content">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../primerTaller/figuras.html">Geometry</a></li>
+                    <li><a href="../segundoTaller/descuentosConCupon.html">Discounts</a></li>
+                    <li class="statistic"><a href="./medianaModaPromedio.html">Statistic</a></li>
+                    <li><a href="../cuartoTaller/salarios.html">Salary</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+    </header>
+    
+    <main class="main_container">
+
+        <div class="header_mobile-navigation">
+            <ul class="nav_mobile-content">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../primerTaller/figuras.html">Geometry</a></li>
+                <li><a href="../segundoTaller/descuentosConCupon.html">Discounts</a></li>
+                <li class="statistic"><a href="./medianaModaPromedio.html">Statistic</a></li>
+                <li><a href="../cuartoTaller/salarios.html">Salary</a></li>
+            </ul>
+        </div>
+
+        <section class="main_content">
+
+            <article class="card_container">
+                <div class="card_info--average">
+                    <h2>Calculate the average of your numbers</h2>
+                    <img src="./assets/images/promedio.png" alt="Average Image">
+
+                    <form action="">
+                        <label for="inputNumbersAverage">Enter how many numbers you want to add</label>
+                        <input id="inputNumbersAverage" type="number">
+                        <button type="button" onclick="mostrarDatosPromedio()">Add numbers</button>
+                    </form>
+                </div>
+
+                <div class="card_results--average">
+                    <h2>Enter each number in the fields</h2>
+                    <div class="card_newInputs--average">
+                        <!-- Aqui iran los nuevos inputs -->
+                    </div>
+                    <button type="button" onclick="resultadoPromedio()">Calculate average</button>
+                    <p class="card_printResult--average">Here you will see your result 😎</p>
+                </div>
+
+            </article>
+
+            <article class="card_container">
+                <div class="card_info--median">
+                    <h2>Calculate the median of your numbers</h2>
+                    <img src="./assets/images/mediana.svg" alt="Average Image">
+
+                    <form action="">
+                        <label for="inputNumbersMedian">Enter how many numbers you want to add</label>
+                        <input id="inputNumbersMedian" type="number">
+                        <button type="button" onclick="mostrarDatosMediana()">Add numbers</button>
+                    </form>
+                </div>
+
+                <div class="card_results--median">
+                    <h2>Enter each number in the fields</h2>
+                    <div class="card_newInputs--median">
+                        <!-- Aqui iran los nuevos inputs -->
+                    </div>
+                    <button type="button" onclick="resultadoMediana()">Calculate median</button>
+                    <p class="card_printResult--median">Here you will see your result 😎</p>
+                </div>
+
+            </article>
+
+            <article class="card_container">
+                <div class="card_info--mode">
+                    <h2>Calculate the mode of your numbers</h2>
+                    <img src="./assets/images/moda.png" alt="Average Image">
+
+                    <form action="">
+                        <label for="inputNumbersMode">Enter how many numbers you want to add</label>
+                        <input id="inputNumbersMode" type="number">
+                        <button type="button" onclick="mostrarDatosModa()">Add numbers</button>
+                    </form>
+                </div>
+
+                <div class="card_results--mode">
+                    <h2>Enter each number in the fields</h2>
+                    <div class="card_newInputs--mode">
+                        <!-- Aqui iran los nuevos inputs -->
+                    </div>
+                    <button type="button" onclick="resultadoModa()">Calculate mode</button>
+                    <p class="card_printResult--mode">Here you will see your result 😎</p>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer_container">
+        <section class="footer_content">
+            <p>Developed By Juan Gualdron</p>
+        </section>
+    </footer>
+    <script src="./base.js"></script>
+    <script src="./promedio.js"></script>
+    <script src="./mediana.js"></script>
+    <script src="./moda.js"></script>
+</body>
+</html>

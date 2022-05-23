@@ -1,10 +1,10 @@
-let inputNumbers = document.getElementById("inputNumbers");
+let inputNumbersMedian = document.getElementById("inputNumbersMedian");
 
-let cardInfo = document.querySelector('.card_info')
+let cardInfoMedian = document.querySelector('.card_info--median')
 
-let cardResults = document.querySelector('.card_results')
-let newInputs = document.querySelector('.card_newInputs')
-let cardPrintResult = document.querySelector('.card_printResult')
+let cardResultsMedian = document.querySelector('.card_results--median');
+let newInputsMedian = document.querySelector('.card_newInputs--median')
+let cardPrintResultMedian = document.querySelector('.card_printResult--median')
 
 
 //Funciones del ejercicio anterior
@@ -23,13 +23,13 @@ function calcularMediaAritmetica(lista){
     return promedioLista.toFixed(2);
 } 
 
-function mostrarDatos(){
-    if (inputNumbers.value > 0){
-        cardInfo.style.display = 'none';
-        cardResults.style.display = 'flex';
+function mostrarDatosMediana(){
+    if (inputNumbersMedian.value > 0){
+        cardInfoMedian.style.display = 'none';
+        cardResultsMedian.style.display = 'flex';
 
-        for(let i = 0; i < inputNumbers.value; i++){
-            newInputs.innerHTML += `<input class="" id="" type="number">`;
+        for(let i = 0; i < inputNumbersMedian.value; i++){
+            newInputsMedian.innerHTML += `<input class="" id="" type="number">`;
         }
     
     }   
@@ -65,14 +65,14 @@ function calcularMediana(lista){
 }
 
 function resultadoMediana() {
-    const listaInputs = document.querySelectorAll('.card_results .card_newInputs input')
+    const listaInputs = document.querySelectorAll('.card_results--median .card_newInputs--median input')
 
     let lista = [];
 
     for (let i = 0; i < listaInputs.length; i++) {
         lista.push(Number(listaInputs[i].value));
     }
-    cardPrintResult.innerText = "La mediana es  " + calcularMediana(lista.sort(function(a, b){
+    cardPrintResultMedian.innerText = "La mediana es  " + calcularMediana(lista.sort(function(a, b){
         return a - b;
     })); 
 }

@@ -15,36 +15,116 @@ html{
 }
 .header_content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     gap: 15px;
     width: 90%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 10px;
     text-align: center;
     color: #e1e4e8
 }
 .header_content h1{
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 .header_content p{
+    padding-top: 10px;
     font-weight: 400;
-    font-size: 2.3rem
+    font-size: 1.8rem
+}
+.header_content .header_burger{
+    width: 40px;
+    height: 40px;
+}
+.header_content .header_xButton{
+    width: 40px;
+    height: 40px;
+}
+.button_burger{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.button_x{
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+.header_content .header_nav{
+    display: none;
+}
+.header_mobile-navigation{
+    display: none;
+    position: absolute;
+    top: -83px;
+    left: calc(50% - 124px);
+    z-index: 999;
+    width: 100%;
+    min-width: 200px;
+    max-width: 250px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+}
+.header_mobile-navigation .nav_mobile-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+.nav_mobile-content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #050215;
+    border-radius: 20px;
+}
+.nav_mobile-content .statistic{
+   background-color: #27263b;
+}
+.nav_mobile-content .statistic a{
+     color: #fff;
+ }
+.nav_mobile-content li a{
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: rgb(225, 201, 246);
 }
 
+
+
+
+
 .main_container{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80vh;
-    max-height: 1200px;
+    min-height: 800px;
+    height: auto;
     background-color: #050215
 }
 
 .main_content{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 30px;
     width: 90%;
     height: 100%;
     min-height: 500px;
@@ -56,7 +136,7 @@ html{
     align-items: center;
     width: 100%;
     min-width: 288px;
-    max-width: 550px;
+    max-width: 500px;
     height: auto;
     min-height: 400px;
     margin: 0 auto;
@@ -68,7 +148,7 @@ html{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.card_container .card_info{
+.card_container .card_info--average,.card_container .card_info--median, .card_container .card_info--mode{
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -80,26 +160,26 @@ html{
     padding: 30px 0;
     text-align: center;
 }
-.card_info h2{
+.card_info--average h2, .card_info--median h2, .card_info--mode h2{
     font-size: 1.8rem;
     color: #fff;
 }
-.card_info img{
+.card_info--average img, .card_info--median img, .card_info--mode img{
     width: 90px;
     height: 90px;
 }
-.card_info form{
+.card_info--average form, .card_info--median form, .card_info--mode form{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
     height: auto;
 }
-.card_info label{
+.card_info--average label, .card_info--median label, .card_info--mode label{
     font-size: 1.5rem;
     color: rgb(214 203 230);
 }
-.card_info input, .label{
+.card_info--average input, .card_info--median input, .card_info--mode input{
     width: 70%;
     height: 30px;
     padding: 12px;
@@ -107,7 +187,7 @@ html{
     border: none;
     background-color: #adafdd;
 }
-.card_info button{
+.card_info--average button, .card_info--median button, .card_info--mode button{
     min-width: 190px;
     max-width: 260px;
     height: 55px;
@@ -125,7 +205,7 @@ html{
 
 
 
-.card_results{
+.card_results--average, .card_results--median, .card_results--mode {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -139,18 +219,18 @@ html{
     padding: 30px 0;
     text-align: center;
 }
-.card_results h2{
+.card_results--average h2, .card_results--median h2, .card_results--mode h2{
     font-size: 1.8rem;
     color: #fff;
 }
-.card_results .card_newInputs{
+.card_results--average .card_newInputs--average, .card_results--median .card_newInputs--median, .card_results--mode .card_newInputs--mode{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.card_results .card_newInputs input{
+.card_results--average .card_newInputs--average input, .card_results--median .card_newInputs--median input, .card_results--mode .card_newInputs--mode input{
     width: 70%;
     height: 30px;
     padding: 12px;
@@ -158,7 +238,7 @@ html{
     border: none;
     background-color: #adafdd;
 }
-.card_results button{
+.card_results--average button, .card_results--median button, .card_results--mode button{
     min-width: 190px;
     max-width: 260px;
     height: 55px;
@@ -173,7 +253,7 @@ html{
     box-shadow: 0 0 20px rgba(0,0,0,0.100);
     cursor: pointer;
 }
-.card_results p{
+.card_results--average p, .card_results--median p, .card_results--mode p{
     width: 100%;
     min-width: 230px;
     max-width: 300px;
@@ -189,21 +269,6 @@ html{
     color: rgb(225 228 232);
     font-size: 1.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .footer_container{

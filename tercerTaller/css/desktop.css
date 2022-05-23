@@ -1,0 +1,70 @@
+.header_container h1{
+    font-size: 3rem
+}
+.header_container p{
+    font-size: 2.6rem;
+}
+.header_content .header_nav{
+    display: block;
+    width: 100%;
+    max-width: 250px;
+
+}
+.button_burger{
+    display: none;
+}
+.header_nav .nav_content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style: none;
+}
+.nav_content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90px;
+    height: 35px;
+}
+.nav_content li a{
+    width: 100%;
+    min-width: 90px;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.nav_content li a:hover{
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    padding: 5px;
+}
+.nav_content .statistic{
+    background-color: #050215;
+    border-radius: 20px;
+}
+
+
+.main_content{
+    flex-direction: row;
+    
+}
+
+.card_info h2{
+    font-size: 2.1rem
+}
+.card_info label{
+    font-size: 1.8rem
+}
+.card_info button{
+    padding: 13px;
+    font-size: 1.7rem
+}
+.card_info p{
+    font-size: 1.7rem
+}
+.footer_container .footer_content p{
+    font-size: 2.2rem
+}

@@ -1,20 +1,20 @@
-let inputNumbers = document.getElementById("inputNumbers");
+let inputNumbersMode = document.getElementById("inputNumbersMode");
 
-let cardInfo = document.querySelector('.card_info')
+let cardInfoMode = document.querySelector('.card_info--mode')
 
-let cardResults = document.querySelector('.card_results')
-let newInputs = document.querySelector('.card_newInputs')
-let cardPrintResult = document.querySelector('.card_printResult')
+let cardResultsMode = document.querySelector('.card_results--mode')
+let newInputsMode = document.querySelector('.card_newInputs--mode')
+let cardPrintResultMode = document.querySelector('.card_printResult--mode')
 
 //Funciones anteriores
 
-function mostrarDatos(){
-    if (inputNumbers.value > 0){
-        cardInfo.style.display = 'none';
-        cardResults.style.display = 'flex';
+function mostrarDatosModa(){
+    if (inputNumbersMode.value > 0){
+        cardInfoMode.style.display = 'none';
+        cardResultsMode.style.display = 'flex';
 
-        for(let i = 0; i < inputNumbers.value; i++){
-            newInputs.innerHTML += `<input class="" id="" type="number">`;
+        for(let i = 0; i < inputNumbersMode.value; i++){
+            newInputsMode.innerHTML += `<input class="" id="" type="number">`;
         }
     
     }   
@@ -49,12 +49,12 @@ function calcularModa(lista){
 }
 
 function resultadoModa() {
-    const listaInputs = document.querySelectorAll('.card_results .card_newInputs input')
+    const listaInputs = document.querySelectorAll('.card_results--mode .card_newInputs--mode input')
 
     let lista = [];
 
     for (let i = 0; i < listaInputs.length; i++) {
         lista.push(Number(listaInputs[i].value));
     }
-    cardPrintResult.innerText = calcularModa(lista); 
+    cardPrintResultMode.innerText = calcularModa(lista); 
 }
