@@ -72,7 +72,7 @@ function resultadoMediana() {
     for (let i = 0; i < listaInputs.length; i++) {
         lista.push(Number(listaInputs[i].value));
     }
-    cardPrintResultMedian.innerText = "La mediana es  " + calcularMediana(lista.sort(function(a, b){
+    cardPrintResultMedian.innerText = "The median is  " + calcularMediana(lista.sort(function(a, b){
         return a - b;
     })); 
 }

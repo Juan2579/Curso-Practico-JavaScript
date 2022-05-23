@@ -40,10 +40,10 @@ function calcularModa(lista){
 
     const moda = listaArray[listaArray.length - 1]
     if(moda[1] <= 1){
-        return "No hay una moda"
+        return "There is no mode"
 
     } else{
-        return "La moda es " + moda[0] + ", se repite " + moda[1] + " veces" 
+        return "The mode is " + moda[0] + ", is repeated " + moda[1] + " times" 
     }
     
 }

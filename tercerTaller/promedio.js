@@ -29,7 +29,7 @@ function resultadoPromedio(){
         lista.push(Number(listaInputs[i].value));
     }
 
-    cardPrintResultAverage.innerText = "El promedio es de " + calcularPromedio(lista).toFixed(2); 
+    cardPrintResultAverage.innerText = "The average is " + calcularPromedio(lista).toFixed(2); 
 
 }
 
