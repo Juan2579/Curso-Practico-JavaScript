@@ -20,12 +20,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100px;
+    max-width: 90px;
     height: 30px;
 }
 .nav_content li a{
     width: 100%;
-    min-width: 100px;
+    min-width: 90px;
     padding: 5px;
     color: #000;
     text-decoration: none;
