@@ -181,7 +181,17 @@ html{
 
 .main_content .main_links{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
+}
+.main_links h2{
+    text-align: center;
+    font-size: 2.2rem;
+    color: (var(--titles-color-font));
+    padding-bottom: 20px;
 }
 .main_links .links_content{
     width: 90%;
@@ -192,11 +202,7 @@ html{
     gap: 30px;
     margin: 0 auto;
 }
-.links_content h2{
-    text-align: center;
-    font-size: 2.2rem;
-    color: (var(--titles-color-font));
-}
+
 
 .card_links--geometry{
     width: 100%;
@@ -371,6 +377,7 @@ html{
     min-width: 288px;
     max-width: 350px;
     height: auto;
+    max-height: 340px;
     background: rgb(190 39 39);
     box-shadow: 0 8px 32px 0 rgb(2 0 0 / 37%);
     backdrop-filter: blur( 16px );

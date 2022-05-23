@@ -1,0 +1,91 @@
+.header_content h1{
+    font-size: 3.2rem
+}
+.button_burger{
+    display: none;
+}
+.header_content .header_nav{
+    display: block;
+    width: 100%;
+    max-width: 300px;
+
+}
+.header_nav .nav_content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style: none;
+}
+.nav_content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100px;
+    height: 30px;
+}
+.nav_content li a{
+    width: 100%;
+    min-width: 70px;
+    padding: 5px;
+    max-width: 100px;
+    color: var(--titles-color-font);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav_content li a:hover{
+    background-color: #fff;
+    border-radius: 20px;
+    color: #FFCD31
+}
+
+
+
+
+.main_content .main_title{
+    max-width: 1500px;
+}
+.main_title .title_info{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main_title h2{
+    width: 70%;
+    font-size: 3rem
+}
+.main_title img{
+    width: 100%;
+    min-width: 400px;
+    max-width: 700px;
+    height: 100%;
+    min-height: 350px;
+    max-height: 600px;
+}
+@media (min-width: 840px) and (max-width: 1150px){
+    .main_links .links_content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 100px;
+    }
+    .card_links--salary{
+        min-height: 341px;
+    }
+}
+@media (min-width: 1300px){
+    .header_content h1{
+        font-size: 3.4rem
+    }
+    .main_title h2{
+        font-size: 3.2rem
+    }
+    .main_links .links_content{
+        flex-direction: row;
+        padding-top: 20px;
+        column-gap: 50px;
+    }
+    .card_links--salary{
+        min-height: 341px;
+    }
+}
+

@@ -16,12 +16,35 @@
 </head>
 <body>
     <header class="header_container">
-        <div>
-            <h1>Geometric Figures</h1>
-            <p>Let's calculate the measurements of your geometric figures</p>
-        </div>
+        <section class="header_content">
+            <div>
+                <h1>Geometric Figures</h1>
+                <p>Let's calculate the measurements of your geometric figures</p>
+            </div>
+            <button onclick="appearNavigation()" id="button_burguer" type="button" class="button_burger"><img class="header_burger" src="/assets/icons/burger.svg" alt="Burger Icon"></button>
+            <button onclick="dissapearNavigation()" id="button_x" type="button" class="button_x"><img class="header_xButton" src="/assets/icons/xButton.svg" alt="X Icon"></button>
+            <nav class="header_nav">
+                <ul class="nav_content">
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="geometry"><a href="./primerTaller/figuras.html">Geometry</a></li>
+                    <li><a href="./segundoTaller/descuentosConCupon.html">Discounts</a></li>
+                    <li><a href="">Statistic</a></li>
+                    <li><a href="./cuartoTaller/salarios.html">Salary</a></li>
+                </ul>
+            </nav>
+
+        </section>
     </header>
     <main class="main_container">
+        <div class="header_mobile-navigation">
+            <ul class="nav_mobile-content">
+                <li><a href="/index.html">Home</a></li>
+                <li class="geometry"><a href="./primerTaller/figuras.html">Geometry</a></li>
+                <li><a href="./segundoTaller/descuentosConCupon.html">Discounts</a></li>
+                <li><a href="">Statistic</a></li>
+                <li><a href="./cuartoTaller/salarios.html">Salary</a></li>
+            </ul>
+        </div>
         <section class="main_content">
             <article class="card_container card_container--square">
                 <section class="card_info">
@@ -34,6 +57,7 @@
                         <button type="button" onclick="calcularPerimetroCuadrado()">Calculate perimeter</button>
                         <button type="button" onclick="calcularAreaCuadrado()">Calculate area</button>
                     </div> 
+                    <p class="">Here you will see your result</p>
                     </form>
                 </section>  
             </article>
@@ -44,15 +68,16 @@
                     <form action="">
                     <label for="inputTriangulo">Enter the measure of the sides, the base and the height of your triangle</label>
                     <img src="./assets/images/triangle.png" alt="Triangulo">
-                    <input id="inputTrianguloLado1" type="number" placeholder="Lado1">
-                    <input id="inputTrianguloLado2" type="number" placeholder="Lado2">
+                    <input id="inputTrianguloLado1" type="number" placeholder="Side1">
+                    <input id="inputTrianguloLado2" type="number" placeholder="Side2">
                     <input id="inputTrianguloBase" type="number" placeholder="Base">
                     <input id="inputTrianguloAltura" type="number"
-                    placeholder="Altura">
+                    placeholder="Height">
                     <div class="card_buttons">
                         <button type="button" onclick="calcularPerimetroTriangulo()">Calculate perimeter</button>
                         <button type="button" onclick="calcularAreaTriangulo()">Calculate area</button>
                     </div> 
+                    <p class="">Here you will see your result</p>
                     </form>
                 </section>  
             </article>
@@ -63,12 +88,13 @@
                     <form action="">
                     <label for="inputCirculo">Enter the measure of the radius of your circle</label>
                     <img src="./assets/images/circle.png" alt="Circulo">
-                    <input id="inputCirculo" type="number" placeholder="Radio">
+                    <input id="inputCirculo" type="number" placeholder="Radius">
                     <div class="card_buttons">
                         <button type="button" onclick="calcularDiametroCirculo()">Calculate diameter</button>
                         <button type="button" onclick="calcularPerimetroCirculo()">Calculate perimeter</button>
                         <button type="button" onclick="calcularAreaCirculo()">Calculate area</button>
                     </div> 
+                    <p class="">Here you will see your result</p>
                     </form>
                 </section>  
             </article>

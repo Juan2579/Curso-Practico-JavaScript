@@ -15,9 +15,11 @@ html{
     background: linear-gradient(to right, #ffefba, #ffffff);
 }
 
-.header_container div{
+.header_container .header_content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     gap: 30px;
     width: 90%;
     padding: 20px 0;
@@ -33,8 +35,78 @@ html{
     font-size: 2.3rem;
     font-weight: 400;
 }
+.header_content .header_burger{
+    width: 40px;
+    height: 40px;
+}
+.header_content .header_xButton{
+    width: 40px;
+    height: 40px;
+}
+.button_burger{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.button_x{
+    background: none;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+.header_content .header_nav{
+    display: none;
+}
+.header_mobile-navigation{
+    display: none;
+    position: absolute;
+    top: -95px;
+    left: calc(50% - 124px);
+    z-index: 999;
+    width: 100%;
+    min-width: 200px;
+    max-width: 250px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+}
+.header_mobile-navigation .nav_mobile-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+.nav_mobile-content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #FFCD31;
+    border-radius: 20px;
+}
+.nav_mobile-content .geometry{
+   background-color: #000;
+    color: #fff;
+}
+.nav_mobile-content li a{
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--titles-color-font);
+}
+
 
 .main_container{
+    position: relative;
     width: 100%;
     height: auto;
     background-color: #fdde48;
@@ -122,11 +194,26 @@ html{
     color: #000;
 }
 .card_container--circle .card_buttons button{
-    width: 81px;
+    width: 75px;
     height: 50px;
     padding: 5px;
     border-radius: 50px;
 }
+
+.card_container p{
+    width: 70%;
+    height: 30px;
+    border: 2px solid #fdde48;
+    padding: 2px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+
 .footer_container{
     width: 100%;
     height: auto;
