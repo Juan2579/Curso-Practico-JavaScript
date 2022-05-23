@@ -1,3 +1,22 @@
+const burgerButton = document.querySelector('.button_burger')
+const xButton = document.querySelector('.button_x')
+const mobileNavigation = document.querySelector('.header_mobile-navigation')
+
+function appearNavigation() {
+    burgerButton.style.display = 'none'
+    xButton.style.display = 'block'
+
+    mobileNavigation.style.display = 'block'
+
+}
+function dissapearNavigation() {
+    burgerButton.style.display = 'block'
+    xButton.style.display = 'none'
+
+    mobileNavigation.style.display = 'none'
+}
+
+
 function calcularPrecioConDescuento(precio, descuento) {
     const porcentajePrecioConDescuento = 100 - descuento - verificarCupon();
     const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100 
@@ -38,9 +57,9 @@ function priceWithDiscount(){
 
     
     if (verificarCupon() !== 0){
-        resultP.innerText = "El precio con descuento es de " + "$" + precioConDescuento + " (tu cupón te dió un " + verificarCupon() + "% extra de descuento)"
+        resultP.innerText = "The price with discount is " + "$" + precioConDescuento + " (your coupon gave you an extra " + verificarCupon() + "% discount)"
     } else {
-        resultP.innerText = "El precio con descuento es de " + "$" + precioConDescuento
+        resultP.innerText = "The price with discount is " + "$" + precioConDescuento
     }
 
 }

@@ -1,6 +1,11 @@
 const burgerButton = document.querySelector('.button_burger')
 const xButton = document.querySelector('.button_x')
 const mobileNavigation = document.querySelector('.header_mobile-navigation')
+const squareResult = document.querySelector('.square_result')
+const triangleResult = document.querySelector('.triangle_result')
+const circleResult = document.querySelector('.circle_result')
+
+
 function appearNavigation() {
     burgerButton.style.display = 'none'
     xButton.style.display = 'block'
@@ -62,7 +67,7 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value)
-    alert("El perimetro del cuadrado es: " + perimetro + "cm")
+    squareResult.innerText = "The perimeter of the square is: " + perimetro + "cm"
 
 }
 
@@ -71,7 +76,7 @@ function calcularAreaCuadrado(){
     const value = input.value;
 
     const area = areaCuadrado(value)
-    alert("El area del cuadrado es: " + area + "cm2")
+    squareResult.innerText = "The area of the square is: " + area + "cm2"
 }
 
 
@@ -89,7 +94,7 @@ function calcularPerimetroTriangulo(){
 
     //Funcion del perimetro
     const perimetro = perimetroTriangulo(valueLado1, valueLado2, valueBase)
-    alert("El perimetro del triangulo es de: " + perimetro + "cm")
+    triangleResult.innerText = "The perimeter of the triangle is: " + perimetro + "cm"
 }
 
 function calcularAreaTriangulo(){
@@ -102,7 +107,7 @@ function calcularAreaTriangulo(){
 
     //Funcion del area
     const area = areaTriangulo(valueBase, valueAltura)
-    alert("El area del triangulo es de: " + area + "cm2")
+    triangleResult.innerText = "The area of the triangle is: " + area + "cm2"
 }
 
 //CIRCULO
@@ -113,7 +118,7 @@ function calcularDiametroCirculo(){
 
     //Funcion del diametro
     const diametro = diametroCirculo(valueRadio)
-    alert("El diametro del circulo es de: " + diametro + "cm");
+    circleResult.innerText = "The diameter of the circle is: " + diametro + "cm";
 }
 
 function calcularPerimetroCirculo(){
@@ -123,7 +128,7 @@ function calcularPerimetroCirculo(){
 
     //Funcion del perimetro
     const perimetro = perimetroCirculo(valueRadio)
-    alert("El perimetro del circulo es de: " + perimetro + "cm");
+    circleResult.innerText = "The perimeter of the circle is: " + perimetro + "cm";
 }
 function calcularAreaCirculo(){
     //radio
@@ -132,5 +137,5 @@ function calcularAreaCirculo(){
 
     //Funcion del area
     const area = areaCirculo(valueRadio)
-    alert("El area del circulo es de: " + area + "cm2");
+    circleResult.innerText = "The area of the circle is: " + area + "cm2";
 }

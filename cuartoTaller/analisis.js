@@ -7,6 +7,29 @@ let newInputs = document.querySelector('.card_newInputs')
 let cardPrintResult = document.querySelector('.card_printResult')
 
 
+const burgerButton = document.querySelector('.button_burger')
+const xButton = document.querySelector('.button_x')
+const mobileNavigation = document.querySelector('.header_mobile-navigation')
+
+function appearNavigation() {
+    burgerButton.style.display = 'none'
+    xButton.style.display = 'block'
+
+    mobileNavigation.style.display = 'block'
+
+}
+
+
+
+
+
+function dissapearNavigation() {
+    burgerButton.style.display = 'block'
+    xButton.style.display = 'none'
+
+    mobileNavigation.style.display = 'none'
+}
+
 
 //Helper functions
 
@@ -95,5 +118,5 @@ function resultadoSalarios() {
     for (let i = 0; i < listaInputs.length; i++) {
         lista.push(Number(listaInputs[i].value));
     }
-    cardPrintResult.innerText = "La mediana de los salarios es de $" + calcularMedianaSalarios(lista) + " y el promedio de los salarios es de $" + calcularMediaAritmetica(lista)
+    cardPrintResult.innerText = "The median of the salaries is $" + calcularMedianaSalarios(lista) + " and the average of the salaries is $" + calcularMediaAritmetica(lista)
 }

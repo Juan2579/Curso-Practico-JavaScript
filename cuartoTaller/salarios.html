@@ -12,17 +12,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <title>Salary</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 970px)">
 </head>
 <body>
     <header class="header_container">
         <section class="header_content">
-            <h1>Salary Analysis</h1>
-            <p>Let's get your Salary Analysis</p>
+            <div>
+                <h1>Salary Analysis</h1>
+                <p>Let's get your Salary Analysis</p>
+            </div>
+            <button onclick="appearNavigation()" id="button_burguer" type="button" class="button_burger"><img class="header_burger" src="./assets/icons/burger.svg" alt="Burger Icon"></button>
+            <button onclick="dissapearNavigation()" id="button_x" type="button" class="button_x"><img class="header_xButton" src="./assets/icons/xButton.svg" alt="X Icon"></button>
+            <nav class="header_nav">
+                <ul class="nav_content">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/primerTaller/figuras.html">Geometry</a></li>
+                    <li><a href="/segundoTaller/descuentosConCupon.html">Discounts</a></li>
+                    <li><a href="">Statistic</a></li>
+                    <li class="salary"><a href="/cuartoTaller/salarios.html">Salary</a></li>
+                </ul>
+            </nav>
         </section>
         
     </header>
     
     <main class="main_container">
+        <div class="header_mobile-navigation">
+            <ul class="nav_mobile-content">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/primerTaller/figuras.html">Geometry</a></li>
+                <li><a href="/segundoTaller/descuentosConCupon.html">Discounts</a></li>
+                <li><a href="">Statistic</a></li>
+                <li class="salary"><a href="/cuartoTaller/salarios.html">Salary</a></li>
+            </ul>
+        </div>
         <section class="main_content">
             <article class="card_container">
                 <div class="card_info">
