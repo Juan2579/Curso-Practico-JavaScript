@@ -353,7 +353,7 @@ html{
 
 }
 .card_content--stats .stats_button{
-    min-width: 75px;
+    min-width: 120px;
     max-width: 260px;
     min-height: 40px;
     font-family: 'Oswald', sans-serif;
